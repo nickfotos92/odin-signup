@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up Form</title>
+</head>
+
+<body>
+    <main>
+        <aside>
+            <div class="title">
+                <img
+                    src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png">
+                <h1>ODIN</h1>
+            </div>
+        </aside>
+        <section>
+            <header class="intro">
+                <p>This is not a real online service! You know you need something like this in your life to you realize
+                    your deepest dreams. Sign up <em>now</em> to get started!</p>
+                <p>You <em>know</em> you want to</p>
+            </header>
+            <form action="">
+                <h3>Let's do this!</h3>
+                <div class="form-entries" id="personalinfo">
+                    <div class="entryfield">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="John" required>
+                    </div>
+                    <div class="entryfield">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Doe" required>
+                    </div>
+                </div>
+                <div class="form-entries" id="contactinfo">
+                    <div class="entryfield">
+                        <label for="mail">Email</label>
+                        <input type="email" id="mail" name="email" placeholder="johndoe@gmail.com" required>
+                    </div>
+                    <div class="entryfield">
+                        <label for="tel">Phone Number</label>
+                        <input type="tel" id="tel" name="phonenumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            placeholder="123-456-7890" required>
+                    </div>
+                </div>
+                <div class=" form-entries" id="passwordinfo">
+                    <div class="entryfield" id="pwd-entry">
+                        <label for="pwd">Password</label>
+                        <input type="password" id="pwd" name="password" minlength="10" required>
+                        <small class="error-message">Password must be at least 10 characters long.</small>
+                    </div>
+                    <div class="entryfield" id="pwd-confirm">
+                        <label for="confirmpwd">Confirm Password</label>
+                        <input type="password" id="confirmpwd" name="confirmpassword" minlength="10" required>
+                        <small class="error-message">Password must be at least 10 characters long.</small>
+                    </div>
+                </div>
+            </form>
+            <div class="bottom" id="bottom">
+                <button type="submit">
+                    Create Account
+                </button>
+                <p>Already have an account? <a href="">Log in</a></p>
+
+            </div>
+        </section>
+    </main>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
